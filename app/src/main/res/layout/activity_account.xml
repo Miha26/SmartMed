@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".Account">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to your Account!"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/home_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    android:background="@drawable/border_btn"/>
+
+                <Button
+                    android:id="@+id/medicalh_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border_btn"
+                    android:text="Medical History"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/reminder_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border_btn"
+                    android:text="Set reminder"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/treatment_btn"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/border_btn"
+                    android:text="Treatment Shedule"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:background="@drawable/border"
+                android:hint="First Name"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:drawablePadding="8dp"/>
+            <TextView
+                android:id="@+id/displayfn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:background="@drawable/border"
+                android:hint="Last Name"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:drawablePadding="8dp"/>
+            <TextView
+                android:id="@+id/displayln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:background="@drawable/border"
+                android:hint="Age"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:drawablePadding="8dp"/>
+            <TextView
+                android:id="@+id/displayage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:background="@drawable/border"
+                android:hint="Height"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:drawablePadding="8dp"/>
+            <TextView
+                android:id="@+id/displayheight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:background="@drawable/border"
+                android:hint="Weight"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:drawablePadding="8dp"/>
+            <TextView
+                android:id="@+id/displayweight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_btype"
+                android:hint="Select Blood Type"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:drawablePadding="16dp"
+                android:drawableEnd="@android:drawable/arrow_down_float"
+                android:textSize="18sp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/displaybtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_gender"
+                android:hint="Select Gender"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:drawablePadding="16dp"
+                android:textSize="18sp"
+                android:drawableEnd="@android:drawable/arrow_down_float"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/displaygender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="Save"
+                android:textColor="@color/black"
+                android:background="@drawable/border_btn"/>
+            <Button
+                android:id="@+id/change_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="Change Data"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:background="@drawable/border_btn"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
